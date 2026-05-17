@@ -6,7 +6,7 @@
 api-key: "BURAYA_API_ANAHTARINI_YAZ"
 
 # Kullanılacak Claude modeli (değiştirme önerilmez)
-model: "claude-3-5-haiku-20241022"
+model: "gemini-2.0-flash"
 
 # ============================================================
 #  SUNUCU TANITIM METNİ (AI'ı buradan eğitirsin!)
