@@ -1,0 +1,28 @@
+name: AIAssistantPlugin
+version: 1.0.0
+main: dev.aiassistant.AIAssistantPlugin
+api-version: '1.21'
+description: AI Asistan - Sunucuya özel eğitilmiş yapay zeka
+
+authors: [SunucuSahibi]
+
+commands:
+  ai:
+    description: AI asistana soru sor
+    usage: /ai <soru>
+    aliases: [yapay-zeka, asistan]
+  aireload:
+    description: AI plugin ayarlarını yeniden yükler
+    usage: /aireload
+    permission: aiassistant.reload
+
+permissions:
+  aiassistant.use:
+    description: /ai komutunu kullanma izni
+    default: true
+  aiassistant.reload:
+    description: Plugin ayarlarını yeniden yükleme izni
+    default: op
+  aiassistant.bypass-cooldown:
+    description: Cooldown'u atlatma izni
+    default: op

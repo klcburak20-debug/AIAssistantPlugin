@@ -1,0 +1,63 @@
+# ============================================================
+#  AI Asistan Plugin - Ayarlar
+# ============================================================
+
+# Anthropic API anahtarın (https://console.anthropic.com adresinden alabilirsin)
+api-key: "BURAYA_API_ANAHTARINI_YAZ"
+
+# Kullanılacak Claude modeli (değiştirme önerilmez)
+model: "claude-3-5-haiku-20241022"
+
+# ============================================================
+#  SUNUCU TANITIM METNİ (AI'ı buradan eğitirsin!)
+# ============================================================
+# Bu metin AI'a sistem talimatı olarak gönderilir.
+# Sunucunla ilgili her şeyi buraya yaz: kurallar, özellikler,
+# ekonomi, rank sistemi, iletişim bilgileri vb.
+# ============================================================
+server-description: |
+  Sen bu Minecraft sunucusunun yardımcı asistanısın. Adın "SunucuBot".
+  Sunucu hakkında bilmen gerekenler:
+  - Sunucu Adı: BenimSunucum
+  - Sunucu IP: play.benimSunucum.net
+  - Sunucu modu: Survival + Economy
+  - Discord: discord.gg/benimSunucum
+  - Kurallar: Hile yasak, hakaret yasak, spam yasak.
+  - Ekonomi: /para, /shop, /auction komutları mevcuttur.
+  - Ranklar: Üye, VIP, MVP, Elite
+  - VIP satın almak için: sunucumağaza.tebex.io
+  Sadece sunucuyla ilgili soruları yanıtla. Konu dışı sorularda
+  nazikçe sunucuyla ilgili bir soru sormalarını iste.
+  Türkçe yanıt ver. Kısa ve anlaşılır ol.
+
+# ============================================================
+#  COOLDOWN (saniye) - Oyuncuların ne kadar sürede bir soru sorabileceği
+# ============================================================
+cooldown-seconds: 15
+
+# Maksimum soru uzunluğu (karakter)
+max-question-length: 200
+
+# AI cevabının maksimum token sayısı
+max-tokens: 300
+
+# ============================================================
+#  MESAJ AYARLARI
+# ============================================================
+messages:
+  prefix: "&8[&b&lAI&8] "
+  thinking: "&7Düşünüyor..."
+  error: "&cBir hata oluştu. Lütfen tekrar dene."
+  cooldown: "&cLütfen &e{saniye} saniye &cbek. Sonra tekrar sorabilirsin."
+  no-permission: "&cBu komutu kullanma iznin yok."
+  empty-question: "&cLütfen bir soru yaz! &7Kullanım: /ai <soru>"
+  too-long: "&cSorun çok uzun! Maksimum {max} karakter."
+  reload-success: "&aAyarlar başarıyla yeniden yüklendi."
+
+# ============================================================
+#  RENK VE FORMAT
+# ============================================================
+# AI cevabının rengi
+answer-color: "&f"
+# Oyuncu adının rengi
+player-color: "&e"
